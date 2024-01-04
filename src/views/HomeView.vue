@@ -17,10 +17,12 @@ function switchContent(articleId) {
 
 <template>
 <div>
-    <nav style="width: 100%;">
-        <button @click="switchContent('article-user')">User</button>
-        <button @click="switchContent('article-food')">Food</button>
-        <button @click="switchContent('article-rate')">Rate</button>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="btn-group">
+            <button @click="switchContent('article-user')" class="btn btn-dark btn-secondary">User</button>
+            <button @click="switchContent('article-food')" class="btn btn-dark btn-secondary">Food</button>
+            <button @click="switchContent('article-rate')" class="btn btn-dark btn-secondary">Rate</button>
+        </div>
     </nav>
 </div>
 <div>
@@ -32,39 +34,6 @@ function switchContent(articleId) {
 </template>
 
 <style lang="css">
-
-    .article-params {
-        text-align: center;
-        color: #000000;
-        padding-top: 10px;
-    }
-
-    nav {
-        margin: 0;
-        padding: 0;
-        background-color: #333;
-        height: 49px;
-    }
-
-    button {
-        float: left;
-    }
-
-    button {
-        display: block;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 15px 12px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #333;
-        font-size: 16px;
-        border: none;
-    }
-
-    button:hover {
-        background-color: #000000;
-    }
 
     .visible {
         display: block;
